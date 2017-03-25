@@ -1,0 +1,31 @@
+.div-text {
+	font-size: 30px;
+	width: 500px;
+	margin: 0 auto;
+}
+li {
+	margin-top: 10px;
+}
+
+.item-button {
+	background-color: grey;
+	color: white;
+	border: none;
+	padding: 10px 25px;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0.7;
+	float: right;
+}
+
+.finish{
+	color: red;
+	text-decoration: line-through;
+	text-decoration-color: black;
+	font-style: italic;
+	cursor: pointer;
+}
+.unfinish{
+	color: black;
+	cursor: pointer;
+}
