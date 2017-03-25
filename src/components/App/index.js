@@ -3,6 +3,7 @@ import logo from './assets/logo.svg'
 import TodoInput from '../TodoInput'
 import TodoShow from '../TodoShow'
 import TodoList from '../TodoList'
+import Srearch from '../Search'
 import './style.css'
 
 class App extends Component {
@@ -14,30 +15,9 @@ class App extends Component {
     }
   }
 
-  showAll = () => {
+  showFilter = (finish, unfinish) => {
     this.setState({
-      show: {
-        finish: true,
-        unfinish: true
-      }
-    })
-  }
-
-  showFinish = () => {
-    this.setState({
-      show: {
-        finish: true,
-        unfinish: false
-      }
-    })
-  }
-
-  showUnfinish = () => {
-    this.setState({
-      show: {
-        finish: false,
-        unfinish: true
-      }
+      show: { finish, unfinish }
     })
   }
 
@@ -75,8 +55,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div className="div-body">
-          <TodoShow handleShowAll={this.showAll} handleShowFinish={this.showFinish} handleShowUnfinish={this.showUnfinish} />
-          <TodoInput handleInput={this.addInput} />
+          <Srearch /> <TodoShow handleshowFilter={this.showFilter} /> <TodoInput handleInput={this.addInput} />
           <TodoList {...this.state} handleChange={this.clickChange} handleRemove={this.clickRemove} />
         </div>
       </div>

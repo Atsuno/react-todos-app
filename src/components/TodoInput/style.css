@@ -4,8 +4,11 @@
 }
 
 .input {
+	margin-top: 10px;
 	font-size: 30px;
 	display: inline-block;
 	opacity: 0.5;
 	padding: 10px 50px;
+	border: none;
+	cursor: pointer;
 }

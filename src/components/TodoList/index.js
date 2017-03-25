@@ -21,10 +21,7 @@ TodoList.propTypes = {
       }
     )).isRequired,
   show: React.PropTypes.objectOf(
-    React.PropTypes.shape({
-      finish: React.PropTypes.bool.isRequired,
-      unfinish: React.PropTypes.bool.isRequired
-    })
+    React.PropTypes.bool.isRequired
   ).isRequired,
   handleChange: React.PropTypes.func.isRequired,
   handleRemove: React.PropTypes.func.isRequired
